@@ -1,52 +1,61 @@
 let products = {
     data: [
       {
-        productName: "Basic Rectangular Silver Mirror",
+        productName: "Basic Rectangular Silver Edged Wall Mirror" ,
         shape: "Rectangular",
+        style:"Basic",
         price: "30",
         image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc155-lifestyle-2.jpg",
       },
       {
-        productName: "Modern Rectangular Silver Mirror",
+        productName: "Modern Rectangular Silver Edged Wall Mirror",
         shape: "Rectangular",
+        style:"Modern",
         price: "49",
         image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc164-lifestyle.jpg",
       },
       {
-        productName: "Luxurious Rectangular Gold Mirror",
+        productName: "Luxurious Rectangular Gold Edged Wall Mirror",
         shape: "Rectangular",
+        style:"Luxurious",
         price: "99",
-        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc159-lifestyle.jpg",
+        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc159-lifestyle.jpg" ,
       },
       {
-        productName: "Basic Hexagon Mirror",
+        productName: "Basic Hexagon White Edged Wall Mirror",
         shape: "Round",
+        style:"Basic",
         price: "29",
         image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc156-lifestyle.jpg",
       },
       {
-        productName: "Round Black Mirror",
+        productName: "Modern Round Black Edged Wall Mirror",
         shape: "Round",
+        style:"Modern",
         price: "129",
-        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/m/f/mf005-110cm-lifestyle.jpg",
+        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/m/f/mf005-110cm-lifestyle.jpg" ,
       },
       {
-        productName: "Ellipse Mirror",
+        productName: "Retro Ellipse White Edged Wall Mirror" ,
         shape: "Ellipse",
+        style:"Retro",
         price: "89",
         image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc146-120x80-lifestyle.jpg",
       },
       {
-        productName: "Basic Square Black Mirror",
+        productName: "Basic Square Black Edged Wall Mirror",
         shape: "Square",
+        style:"Basic",
         price: "189",
-        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc150-lifestyle.jpg",
+        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/c/yc150-lifestyle.jpg" ,
+        
       },
       {
         productName: "Modern Square Window Wall Mirror",
         shape: "Square",
+        style:"Modern",
         price: "49",
-        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/e/ye005-2x2-lifestyle.jpg",
+        image: "https://www.mirroroutlet.co.uk/media/catalog/product/cache/8c620cce223afa779614e23d4ad3456b/y/e/ye005-2x2-lifestyle.jpg" ,
       },
     ],
   };
@@ -56,6 +65,7 @@ let products = {
     let card = document.createElement("div");
     //Card should have shape and should stay hidden initially
     card.classList.add("card", i.shape, "hide");
+    card.classList.add("card", i.style, "hide");
     //image div
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container");
